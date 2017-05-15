@@ -1,0 +1,9 @@
+<div class="activityBlock" [ngClass]="{activityBlockHidden: isShow}" (click)="showListPopup($event)">
+  <div *ngIf="!isShowActivityAdded" [ngClass]="{'glyphicon-plus': isShow}" class="glyphicon" style="padding: 37px 0;"></div>
+  <div class="isShowActivityAdded" *ngIf="isShowActivityAdded">
+    <div style="text-overflow: ellipsis;white-space: nowrap;overflow: hidden;">{{item?.name || 'NAME'}}</div>
+    <div>{{item?.description || 'Description'}}</div>
+  </div>
+</div>
+<dg-list-activities #list *ngIf="showList" [isListVisible]="showList" (selected) = "data($event)"></dg-list-activities>
+

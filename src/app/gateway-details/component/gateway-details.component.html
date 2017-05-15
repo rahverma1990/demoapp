@@ -1,0 +1,40 @@
+<div style = "border-bottom:2px solid black; height:100px">
+<a routerLink='/link1'>
+          <span class="glyphicon glyphicon-chevron-left" style="padding:43px 10px;float:left"></span>
+        </a>
+<h1>{{gatewayDetails?.id}}</h1>
+<div>{{gatewayDetails?.description}}</div>
+</div>
+<section>
+  <div style="height:150px;">
+  <div style="display:inline-block;margin-top:15px;">
+  <div style="height:100px;width:100px;padding-left:10px;border:1px solid grey;border-top-right-radius: 10%;border-bottom-right-radius: 10%">
+    <div>Request</div>
+    <div class="glyphicon glyphicon-phone" style="font-size: 64px;"></div>
+    <!--<img style="height: 69px;width:57px" alt="request Image" src="https://d26uhratvi024l.cloudfront.net/gsc/PY1TC2/fd/38/60/fd386041fead4dbcba839babe5576c77/images/gateway_detail/u2462.png?token=4f51ec953e829ba0d6e7a8620acdc11a">-->
+  </div>
+  </div>
+  <div class="glyphicon glyphicon-triangle-right" style="font-size:60px;color: grey;"></div>
+    <div style="width:85%;height:10px;background-color: grey;position: absolute;top: 236px;left:11%"></div>
+    <div style="width:10px;height:202px;background-color: grey;position: absolute;top: 236px;right:4%"></div>
+  <dg-add-activity *ngIf="true"(policy) = "policyRequest($event)" (policyPop)="policyPop($event)"></dg-add-activity>
+  <dg-add-activity *ngIf="true" (policy) = "policyRequest($event)" (policyPop)="policyPop($event)"></dg-add-activity>
+  <dg-add-activity *ngIf="true" (policy) = "policyRequest($event)" (policyPop)="policyPop($event)"></dg-add-activity>
+  </div>
+
+  <div style="margin-top: 100px;height:150px;">
+    <div style="width:86%;height:10px;background-color: grey;position: absolute;top: 488px;right:11%"></div>
+    <div style="width:10px;height:202px;background-color: grey;position: absolute;top: 286px;left:3%"></div>
+    <dg-add-activity  (policy) = "policyResponse($event)"></dg-add-activity>
+    <dg-add-activity  (policy) = "policyResponse($event)"></dg-add-activity>
+    <dg-add-activity  (policy) = "policyResponse($event)"></dg-add-activity>
+    <div class="glyphicon glyphicon-triangle-left" style="font-size:60px;color: grey;float:right;right:8%;margin-top: 3%;"></div>
+    <div style="display:inline-block;margin-top:15px;float:right;position: relative;right: -59px;">
+      <div style="height:100px;width:100px;padding-left:10px;border:1px solid grey;border-top-left-radius: 10%;border-bottom-left-radius: 10%">
+        <div>Response</div>
+        <div class="glyphicon glyphicon-phone" style="font-size: 64px;"></div>
+        <!--<img style="height: 69px;width:57px" alt="request Image" src="https://d26uhratvi024l.cloudfront.net/gsc/PY1TC2/fd/38/60/fd386041fead4dbcba839babe5576c77/images/gateway_detail/u2462.png?token=4f51ec953e829ba0d6e7a8620acdc11a">-->
+      </div>
+    </div>
+  </div>
+</section>

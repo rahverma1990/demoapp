@@ -1,0 +1,11 @@
+{
+  "id":"1",
+  "name":"payment by country route",
+  "description":"I'm looking at the country of the order and sending it to the right processo",
+  "type":"digital gateway:app",
+  "version":"0.0.1",
+  "policies":{
+    "requestPolicy":[],
+    "responsePolicy":[]
+  }
+}

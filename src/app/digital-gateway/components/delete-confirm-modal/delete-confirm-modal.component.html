@@ -1,0 +1,14 @@
+<span class="glyphicon glyphicon-trash pull-right margin-top-10" (click)="open()"></span>
+<modal #deleteModal>
+    <modal-header>
+        <button type="button" class="close" (click)="close()" >&times;</button>
+        <h3 class="modal-title">Confirm Delete</h3>
+    </modal-header>
+    <modal-body>
+        Are you sure you want to delete this Gateway?
+    </modal-body>
+    <modal-footer>
+        <button type="button" class="btn btn-primary" (click)="delGateway()">Confirm</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="modal.dismiss()">Cancel</button>
+    </modal-footer>
+</modal>

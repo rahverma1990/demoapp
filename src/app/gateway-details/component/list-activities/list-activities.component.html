@@ -1,0 +1,6 @@
+<div *ngIf="isListVisible">
+<ul *ngFor="let item of list" (click)="select(item)">
+<li>{{item.name}}</li>
+<li>{{item.description}}</li>
+</ul>
+</div>
