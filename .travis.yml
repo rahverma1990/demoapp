@@ -28,4 +28,7 @@ before_install:
 #- npm install
 #- ng build
 
-#script: karma start karma.conf.js --single-run
+"script": [
+    "if [[ \"$SCRIPT\" ]]; then npm run-script $SCRIPT; fi",
+    "if [[ \"$NODE_SCRIPT\" ]]; then node $NODE_SCRIPT; fi"
+  ],
