@@ -14,7 +14,7 @@ import {ActivatedRoute} from "@angular/router";
 export class GatewayDetailsComponent implements OnInit {
   isListVisible: Boolean;
   gatewayDetails: GatewayModel;
-  constructor(private _GatewayDetailsService: GatewayDetailsService,private router: ActivatedRoute) {
+  constructor(private _GatewayDetailsService: GatewayDetailsService, private router: ActivatedRoute) {
 
   }
  id: String;

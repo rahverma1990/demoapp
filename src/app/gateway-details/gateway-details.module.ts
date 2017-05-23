@@ -6,6 +6,7 @@ import { GatewayDetailsComponent } from './component/gateway-details.component';
 import { AddActivityComponent } from './component/add-activity/add-activity.component';
 import { ListActivitiesComponent } from './component/list-activities/list-activities.component';
 
+
 @NgModule({
   imports: [
     CommonModule,
