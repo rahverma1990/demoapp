@@ -36,7 +36,7 @@ module.exports = function (config) {
     base: 'Chrome',
     flags: ['--no-sandbox']
   }
-}
+},
     reporters: config.angularCli && config.angularCli.codeCoverage
               ? ['progress', 'coverage-istanbul']
               : ['progress', 'kjhtml'],
