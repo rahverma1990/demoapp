@@ -3,7 +3,9 @@ dist: trusty
 language: node_js
 node_js:
   - '4.6'
-
+branches:
+  only:
+  - travis-setup
 addons:
 apt:
   sources:
@@ -21,6 +23,6 @@ before_script:
 - npm install -g angular-cli
 - npm install -g karma
 - npm install
-- ng buildi
+- ng build
 
 script: karma start config/karma.conf.js --single-run
