@@ -29,7 +29,7 @@ before_install:
 
 #before_script:
 #- npm install -g karma
-#- npm install
+- npm install
 #- ng build
 
 script:
