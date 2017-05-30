@@ -41,6 +41,6 @@ script:
   - karma start karma.conf.js --single-run
   - ./docker-build.sh
   - docker run -d -p 4200:4200 docker/travis-test
-  - docker ps -a
+  #- docker ps -a
   - docker run docker/travis-test
 
