@@ -5,7 +5,9 @@ dist: trusty
 language: node_js
 node_js:
   - '6.9.4'
-
+branches:
+  only:
+  - travis-setup
 addons:
 apt:
   sources:
