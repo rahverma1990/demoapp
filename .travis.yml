@@ -7,7 +7,7 @@ node_js:
   - '6.9.4'
 branches:
   only:
-  - travis-setup
+  - master
 addons:
 apt:
   sources:
