@@ -9,9 +9,9 @@ branches:
   only:
   - travis-setup
  
-#cache:
-#  directories:
-#    - node_modules
+cache:
+  directories:
+    - node_modules
 
 addons:
 apt:
