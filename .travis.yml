@@ -8,6 +8,11 @@ node_js:
 branches:
   only:
   - travis-setup
+ 
+cache:
+  directories:
+    - node_modules
+
 addons:
 apt:
   sources:
