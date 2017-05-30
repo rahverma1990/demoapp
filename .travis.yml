@@ -17,10 +17,7 @@ apt:
     - google-chrome-beta
 
 before_install:
-  - docker build -t docker/travis-test .
-  - docker run -d -p 4200:4200 docker/travis-test
-  - docker ps -a
-  - docker run docker/travis-test
+ 
   - export CHROME_BIN=/usr/bin/google-chrome
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
@@ -37,4 +34,8 @@ before_install:
 script:
   - ng build
   - karma start karma.conf.js --single-run
+  - docker build -t docker/travis-test .
+  - docker run -d -p 4200:4200 docker/travis-test
+  - docker ps -a
+  - docker run docker/travis-test
 
