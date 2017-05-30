@@ -39,6 +39,7 @@ before_install:
 script:
   - ng build
   - karma start karma.conf.js --single-run
+  - chmod ugo+x ./docker-build.sh
   - ./docker-build.sh
   - docker run -d -p 4200:4200 docker/travis-test
   #- docker ps -a
