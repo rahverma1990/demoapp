@@ -1,12 +1,12 @@
 {
 	"gateway": {
-		"name": "KafkaTrigger-To-KafkaActivity-mashling-linux",
+		"name": "public-kafka-reference-gateway-linux",
 		"version": "1.0.0",
-		"description": "This is the first microgateway app",
+		"description": "This is the kafka based microgateway app",
 		"configurations": [
 			{
 				"name": "kafkaConfig",
-				"type": "github.com/TIBCOSoftware/flogo-contrib/trigger/kafkasub",
+				"type": "github.com/wnichols/kafkasub",
 				"description": "Configuration for kafka cluster",
 				"settings": {
 					"BrokerUrl": "localhost:9092"
@@ -14,35 +14,32 @@
 			}
 		],
 		"triggers": [
-            
 			{
-				"name": "kafka_trigger1",
+				"name": "kafka_trigger",
 				"description": "The trigger on kafka 'users' topic",
-				"type": "github.com/TIBCOSoftware/flogo-contrib/trigger/kafkasub",
+				"type": "github.com/wnichols/kafkasub",
 				"settings": {
-					"Topic": "publishpet",
+					"Topic": "users",
 					"config": "${configurations.kafkaConfig}"
 				}
 			}
 		],
 		"event_handlers": [
-            
 			{
-				"name": "kafka_handler1",
+				"name": "user_topic_handler",
 				"description": "Handle the user access",
-				"reference": "github.com/TIBCOSoftware/mashling-lib/flow/KafkaTriggerToKafkaActivity.json",
+				"reference": "github.com/TIBCOSoftware/mashling-lib/flow/kafkaFlow.json",
 				"params": {
 				}
 			}
 		],
 		"event_links": [
-            
 			{
-				"triggers": ["kafka_trigger1"],
+				"triggers": ["kafka_trigger"],
 				"dispatches": [
 					{
 						"if": "trigger.content != undefined",
-						"handler": "kafka_handler1"
+						"handler": "user_topic_handler"
 					}
 				]
 			}

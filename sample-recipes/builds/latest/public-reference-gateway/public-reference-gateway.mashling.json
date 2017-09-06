@@ -1,6 +1,6 @@
 {
 	"gateway": {
-		"name": "reference-gateway-linux",
+		"name": "public-reference-gateway-linux",
 		"version": "1.0.0",
 		"description": "This is the first microgateway app",
 		"configurations": [],

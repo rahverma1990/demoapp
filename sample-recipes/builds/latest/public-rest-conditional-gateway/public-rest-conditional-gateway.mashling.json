@@ -1,6 +1,6 @@
 {
   "gateway": {
-    "name": "rest-conditional-gateway-linux",
+    "name": "public-rest-conditional-gateway-linux",
     "version": "1.0.0",
     "description": "This is the rest based microgateway app",
     "configurations": [

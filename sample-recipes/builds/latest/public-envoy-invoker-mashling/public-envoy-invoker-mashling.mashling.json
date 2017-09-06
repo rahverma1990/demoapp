@@ -1,6 +1,6 @@
 {
 	"gateway": {
-		"name": "envoy-invoker-mashling-linux",
+		"name": "public-envoy-invoker-mashling-linux",
 		"version": "1.0.0",
 		"description": "This is the microgateway app that invokes envoy front-proxy",
 		"configurations": [],

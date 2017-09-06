@@ -1,6 +1,6 @@
 {
   "gateway": {
-    "name": "kafka-conditional-gateway-linux",
+    "name": "public-kafka-conditional-gateway-linux",
     "version": "1.0.0",
     "description": "This is the kafka based microgateway app",
     "configurations": [

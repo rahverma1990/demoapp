@@ -1,6 +1,6 @@
 {
 	"gateway": {
-		"name": "inline-gateway-linux",
+		"name": "public-inline-gateway-linux",
 		"version": "1.0.0",
 		"description": "This is the first microgateway app",
 		"configurations": [
